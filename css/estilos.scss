@@ -1,0 +1,1298 @@
+@import "404";
+
+$colorBlanco: #fff;
+$colorNaranja: #ff5f45;
+$colorAzul: #0798ec;
+$colorRojo: #fc6c7c;
+$colorAmarillo: #fec401;
+$colorAzulOscuro: #212F3C;
+$colorGris: #888;
+$colorFucsia: #ff456c;
+
+$tipoDeLetra: arial,
+helvetica;
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: $tipoDeLetra;
+    color: $colorBlanco;
+}
+
+.header__icono--size {
+    font-size: 20px;
+}
+
+.header__icono--size:hover {
+    transform: scale(1.5);
+}
+
+@keyframes animate__bounce {}
+
+h1 {
+    color: $colorBlanco;
+    font-size: 70px;
+    text-align: center;
+    animation: bounce;
+    animation-duration: 3s;
+}
+
+h2 {
+    color: $colorBlanco;
+    font-size: 70px;
+    text-align: center;
+    animation: bounce;
+    animation-duration: 3s;
+}
+
+
+h3 {
+    color: $colorBlanco;
+    font-size: 22px;
+    text-align: center;
+    animation: bounce;
+    animation-duration: 3s;
+}
+
+
+
+nav {
+    background-color: $colorNaranja;
+    letter-spacing: 1px;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    li {
+        a:hover {
+            text-decoration: underline 3px solid $colorBlanco;
+        }
+    }
+}
+
+.menu__lista {
+    list-style: none;
+    display: flex;
+}
+
+nav {
+    a {
+        margin: 10px;
+        text-decoration: none;
+        color: $colorBlanco;
+        font-size: 19px;
+    }
+}
+
+.container__titulo--color {
+    color: $colorBlanco;
+}
+
+a {
+    text-decoration: none;
+}
+
+@for $i from 1 through 4 {
+    .container-#{$i} {
+        @if $i==1 {
+            background-color: $colorNaranja;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @else if $i==2 {
+            background-color: $colorAzul;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @else if $i==3 {
+            background-color: $colorRojo;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @else if $i==4 {
+            background-color: $colorAmarillo;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.img1 {
+    margin-top: 80px;
+    width: 8vw;
+}
+
+.contenedorImagen1 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: $colorAzulOscuro;
+    clear: both;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10vh;
+}
+
+button {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: $colorBlanco;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-right: 1.5%;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.containerArticulos {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+
+
+#menu {
+    background-color: $colorAzulOscuro;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
+img {
+    width: 18vw;
+    border-radius: 10px;
+
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+#tennis1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#tennis2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#tennis3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#camiseta1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#camiseta2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#camiseta3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#buso1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#buso2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#buso3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.navbar--color {
+    background-color: $colorAzulOscuro;
+}
+
+.container__logo--witdh {
+    width: 20vw;
+}
+
+.container__logo--witdh:hover {
+    transform: scale(1.2);
+}
+
+.containerAcercaDe {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contendorQuienesSomos {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button__icono--size {
+    font-size: 100px;
+    color: $colorAzulOscuro;
+}
+
+video {
+    width: 60vw;
+    border-radius: 20px;
+}
+
+.containerSection {
+    height: 50vh;
+    color: $colorAzulOscuro;
+    font-size: 18px;
+    line-height: 2rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSection:hover {
+    transform: scale(1.1);
+}
+
+.contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head {
+    background-color: $colorAzulOscuro;
+    border-radius: 5px;
+    margin-top: -5vh;
+}
+
+.efecto {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn1 {
+    font-size: 12px;
+    background-color: $colorAzulOscuro;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+}
+
+.contenedorCkeckbox {
+    color: gray;
+}
+
+.contenedorPagos {
+    height: 100vh;
+    background-color: $colorAzulOscuro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorPagos1 {
+    height: 50vh;
+    width: 15vw;
+    background-color: $colorBlanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorPagos2 {
+    height: 60vh;
+    width: 15vw;
+    background-color: $colorFucsia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorPagos {
+    color: $colorGris;
+}
+
+.btnPagos {
+    margin-top: 70px;
+    font-size: 20px;
+    background-color: #3cc63c;
+    border-radius: 10px;
+}
+
+.btnPagos1 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: #ebf112;
+    border-radius: 10px;
+}
+
+.btnPagos2 {
+    font-size: 20px;
+    background-color: #3cc63c;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.listaTarjetas {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.tituloLicenciaTarjeta {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.tituloLicencia {
+    margin-top: 15px;
+    font-size: 15px;
+    color: $colorGris;
+}
+
+.imagenEfectivo {
+    margin-top: 40px;
+    width: 10vw;
+}
+
+.imagenPSE{
+    width: 18vw;
+}
+
+.contenedorPagosPSE {
+    display: flex;  
+}
+
+.contenedorPagosEfectivo {
+    margin-top: 30px;
+    display: flex;
+}
+
+@media only screen and (max-width: 319px) and (min-width: 280px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav {
+        a {
+            margin: 3px;
+            font-size: 7px;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .img1 {
+        margin-top: 60px;
+        width: 18vw;
+    }
+
+    .header__icono--size {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    img {
+        width: 25vw;
+        margin: 5%;
+    }
+
+    .container__logo--witdh {
+        width: 50vw;
+    }
+
+    video {
+        width: 70vw;
+    }
+
+    .button__icono--size {
+        font-size: 20px;
+    }
+
+    .containerSection {
+        line-height: 1.2rem;
+    }
+
+
+    .container__titulo--align {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    h5 {
+        font-size: 10px;
+    }
+
+    h6 {
+        font-size: 8px;
+    }
+
+    .btn1 {
+        font-size: 6px;
+        height: 3vh;
+        width: 21vw;
+    }
+
+    ::placeholder {
+        font-size: 8px;
+    }
+
+
+    .contenedorPagos2 {
+        h3 {
+            font-size: 8px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 8px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 35vh;
+        width: 30vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 40vh;
+        width: 35vw;
+    }
+
+    .btnPagos {
+        margin-top: 20px;
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        list-style: none;
+        margin-top: 3px;
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 8px;
+        font-size: 5px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 5px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 25px;
+        width: 13vw;
+    }
+
+    .imagenPSE {
+        margin-top: 20px;
+        width: 25vw;
+    }
+
+
+    .contenedorPagosEfectivo {
+        display: flex;
+        margin-top: 2px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav {
+        a {
+            margin: 3px;
+            font-size: 8px;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .header__icono--size {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .img1 {
+        margin-top: 60px;
+        width: 16vw;
+    }
+
+    img {
+        width: 25vw;
+        margin: 5%;
+    }
+
+    .container__logo--witdh {
+        width: 50vw;
+    }
+
+    video {
+        width: 70vw;
+    }
+
+    .button__icono--size {
+        font-size: 20px;
+
+    }
+
+    .containerSection {
+        line-height: 1.3rem;
+    }
+
+
+    .container__titulo--align {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    .btn1 {
+        font-size: 7px;
+        height: 4vh;
+        width: 22vw;
+    }
+
+
+    ::placeholder {
+        font-size: 10px;
+    }
+
+    .contenedorPagos2 {
+        h3 {
+            font-size: 8px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 8px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 35vh;
+        width: 30vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 40vh;
+        width: 35vw;
+    }
+
+    .btnPagos {
+        margin-top: 15px;
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 8px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        list-style: none;
+        margin-top: 1px;
+        font-size: 7px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 8px;
+        font-size: 5px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 5px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 20px;
+        width: 8vw;
+    }
+
+
+    .imagenPSE {
+        margin-top: 20px;
+        width: 16vw;
+    }
+
+
+    .contenedorPagosEfectivo {
+        margin-top: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    nav {
+        a {
+            margin: 4px;
+            font-size: 11px;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .header__icono--size {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 25px;
+    }
+
+    .img1 {
+        margin-top: 60px;
+        width: 15vw;
+    }
+
+    img {
+        width: 25vw;
+        margin: 5%;
+    }
+
+    .container__logo--witdh {
+        width: 30vw;
+    }
+
+    video {
+        width: 70vw;
+    }
+
+    .button__icono--size {
+        font-size: 20px;
+    }
+
+    .containerSection {
+        line-height: 1.5rem;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .btn1 {
+        font-size: 9px;
+        height: 4vh;
+        width: 25vw;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    .contenedorPagos2 {
+        h3 {
+            font-size: 8px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 10px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 40vh;
+        width: 30vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 45vh;
+        width: 35vw;
+    }
+
+    .btnPagos {
+        margin-top: 15px;
+        font-size: 10px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 12px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 12px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        list-style: none;
+        margin-top: 1px;
+        font-size: 10px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 8px;
+        font-size: 8px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 8px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 20px;
+        width: 7vw;
+    }
+
+    .imagenPSE {
+        margin-top: 0px;
+        width: 15vw;
+    }
+
+
+    .contenedorPagosEfectivo {
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    nav {
+        a {
+            margin: 12px;
+            font-size: 15px;
+        }
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .header__icono--size {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    .img1 {
+        margin-top: 60px;
+        width: 14vw;
+    }
+
+    img {
+        width: 25vw;
+        margin: 5%;
+    }
+
+    .container__logo--witdh {
+        width: 30vw;
+    }
+
+    video {
+        width: 70vw;
+    }
+
+    .button__icono--size {
+        font-size: 30px;
+    }
+
+    .containerSection {
+        line-height: 1.8rem;
+    }
+
+
+    p {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    h6 {
+        font-size: 13px;
+    }
+
+    .btn1 {
+        font-size: 10px;
+        height: 4vh;
+        width: 18vw;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    
+    .contenedorPagos2 {
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 45vh;
+        width: 25vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 50vh;
+        width: 30vw;
+    }
+
+    .btnPagos {
+        margin-top: 15px;
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        margin-top: 1px;
+        font-size: 11px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 20px;
+        width: 4vw;
+    }
+
+    .imagenPSE {
+        margin-top: 0px;
+        width: 12vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+
+    nav {
+        a {
+            margin: 8px;
+            font-size: 17px;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .header__icono--size {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 40px;
+    }
+
+    .img1 {
+        margin-top: 60px;
+        width: 14vw;
+    }
+
+    img {
+        width: 25vw;
+        margin: 5%;
+    }
+
+    .container__logo--witdh {
+        width: 30vw;
+    }
+
+    video {
+        width: 70vw;
+    }
+
+    .button__icono--size {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .btn1 {
+        font-size: 10px;
+        height: 4vh;
+        width: 17vw;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .contenedorPagos2 {
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 45vh;
+        width: 25vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 50vh;
+        width: 30vw;
+    }
+
+    .btnPagos {
+        margin-top: 15px;
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 14px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        margin-top: 1px;
+        font-size: 13px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 20px;
+        width: 3vw;
+    }
+
+    .imagenPSE {
+        margin-top: 0px;
+        width: 10vw;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+    .contenedorPagos2 {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .contenedorPagos1 {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .contenedorPagos1 {
+        height: 45vh;
+        width: 20vw;
+    }
+
+
+    .contenedorPagos2 {
+        height: 50vh;
+        width: 25vw;
+    }
+
+    .btnPagos {
+        margin-top: 15px;
+        font-size: 18px;
+        padding: 1vh;
+    }
+
+    .btnPagos1 {
+        font-size: 18px;
+        padding: 1vh;
+    }
+
+    .btnPagos2 {
+        font-size: 18px;
+        padding: 1vh;
+    }
+
+    .listaTarjetas {
+        font-size: 15px;
+        padding: 1vh;
+    }
+
+
+    .listaTarjetas {
+        li {
+            padding: 1vh;
+        }
+    }
+
+
+    .tituloLicenciaTarjeta {
+        margin-top: 13px;
+        font-size: 15px;
+    }
+
+    .tituloLicencia {
+        margin-top: 13px;
+        font-size: 15px;
+    }
+
+    .imagenEfectivo {
+        margin-top: 2vh;
+        width: 6vw;
+    }
+
+    .imagenPSE {
+        width: 10vw;
+    }
+}

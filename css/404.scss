@@ -1,0 +1,16 @@
+$colorBlanco: #fff;
+
+$tipoDeLetra: arial,helvetica;
+
+.containerError{
+    background-color: #ff5f45;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+
+.menuError{
+    background-color: #ff5f45;
+}
